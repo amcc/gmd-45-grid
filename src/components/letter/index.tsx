@@ -10,9 +10,9 @@ function Letter({ image, gridSize, className }: LetterProps) {
   const grid = Array.from({ length: gridSize }, (_, i) => i);
   return (
     <div className={`${styles.letter} ${className}`}>
-      <div className={styles.flexGrid}>
+      <div className={styles.flexLetterGrid}>
         {grid.map((rowIndex) => (
-          <div key={rowIndex} className={styles.flexRow}>
+          <div key={rowIndex} className={styles.flexLetterRow}>
             {grid.map((cellIndex) => {
               const xPos = (cellIndex / (gridSize - 1)) * 100;
               const yPos = (rowIndex / (gridSize - 1)) * 100;
@@ -26,7 +26,7 @@ function Letter({ image, gridSize, className }: LetterProps) {
               return (
                 <div
                   key={cellIndex}
-                  className={`${styles.flexCell} ${expanded}`}
+                  className={`${styles.flexLetterCell} ${expanded}`}
                   style={cellStyle}
                 ></div>
               );

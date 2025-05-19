@@ -1,5 +1,5 @@
 .app {
-  --shrunk: 30%;
+  --shrunk: 10%;
   --expanded: 40%;
   width: 100vw;
   /* min-height: 50vh; */
@@ -19,6 +19,7 @@
 
 .flexRow {
   display: flex;
+  flex-wrap: wrap;
   flex: 1 1 auto;
   transition: all 0.3s ease-in-out;
   /* height: 100%; */
@@ -27,6 +28,7 @@
   /* gap: 1rem; */
 }
 .flexCell {
+  width: 50%;
   /* background-color: #fff; */
   /* background-size: 100%; */
   transition: all 0.3s ease-in-out;
