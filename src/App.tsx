@@ -1,7 +1,7 @@
 // import { useState, useRef, useEffect, use } from "react";
 import i4 from "./assets/4.png";
-import i7 from "./assets/7.png";
-import i8 from "./assets/8.png";
+// import i7 from "./assets/7.png";
+// import i8 from "./assets/8.png";
 import i15 from "./assets/15.png";
 import i23 from "./assets/23.png";
 import i26 from "./assets/26.png";
