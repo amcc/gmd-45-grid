@@ -1,0 +1,71 @@
+.letter {
+  --letter-shrunk: 40%;
+  --letter-expanded: 100%;
+  /* width: 30vw;
+  height: 30vw; */
+}
+
+.flexGrid {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* width: min(30vw, 30vh);
+  height: min(30vw, 30vh); */
+  /* aspect-ratio: 1; */
+  /* gap: 1rem; */
+}
+
+.flexRow {
+  display: flex;
+  flex: 1 1 auto;
+  transition: all 0.3s ease-in-out;
+  /* height: 100%; */
+  /* width: 100%; */
+  flex-basis: var(--letter-shrunk);
+  /* gap: 1rem; */
+}
+.flexCell {
+  aspect-ratio: 1;
+  background-color: #fff;
+  /* background-size: 100%; */
+  transition: all 0.3s ease-in-out;
+
+  flex: 1 1 auto;
+  flex-basis: var(--letter-shrunk);
+  /* height: 100%; */
+  /* border: 1px solid white; */
+  cursor: pointer;
+  overflow: hidden;
+
+  /* img,
+  svg {
+    max-width: inherit;
+    max-height: inherit;
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: fit;
+  } */
+}
+.flexRow:hover {
+  flex-basis: var(--letter-expanded);
+}
+.flexCell:hover {
+  flex-basis: var(--letter-expanded);
+  background-size: 10%;
+  img {
+    /* width: var(--letter-expanded); */
+  }
+}
+.expanded {
+  flex-basis: var(--letter-expanded);
+}
+.white {
+  background-color: white;
+}
+.green {
+  background-color: var(--green);
+}

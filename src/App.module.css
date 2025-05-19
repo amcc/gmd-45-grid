@@ -1,0 +1,54 @@
+.app {
+  --shrunk: 30%;
+  --expanded: 40%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flexGrid {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  /* width: min(50vw, 50vh);
+  height: min(50vw, 50vh); */
+  /* gap: 1rem; */
+}
+
+.flexRow {
+  display: flex;
+  flex: 1 1 auto;
+  transition: all 0.3s ease-in-out;
+  /* height: 100%; */
+  /* width: 100%; */
+  flex-basis: var(--shrunk);
+  /* gap: 1rem; */
+}
+.flexCell {
+  /* background-color: #fff; */
+  /* background-size: 100%; */
+  transition: all 0.3s ease-in-out;
+
+  flex: 1 1 auto;
+  flex-basis: var(--shrunk);
+  /* height: 100%; */
+  /* border: 1px solid white; */
+  cursor: crosshair;
+  overflow: hidden;
+}
+.flexRow:hover {
+  flex-basis: var(--expanded);
+}
+.flexCell:hover {
+  flex-basis: var(--expanded);
+}
+.expanded {
+  flex-basis: var(--expanded);
+}
+.white {
+  background-color: white;
+}
+.green {
+  background-color: var(--green);
+}
