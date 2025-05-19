@@ -2,15 +2,16 @@
   --shrunk: 30%;
   --expanded: 40%;
   width: 100vw;
-  height: 100vh;
+  /* min-height: 50vh; */
 }
 
 .flexGrid {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex: 1 1 auto; */
+  /* flex-direction: column; */
   width: 100vw;
-  height: 100vh;
+  min-height: 50vh;
+  /* aspect-ratio: 4/1; */
   /* width: min(50vw, 50vh);
   height: min(50vw, 50vh); */
   /* gap: 1rem; */
@@ -51,4 +52,9 @@
 }
 .green {
   background-color: var(--green);
+}
+
+.dummy {
+  width: 50ch;
+  margin: 20px;
 }

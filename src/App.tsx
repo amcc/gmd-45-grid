@@ -15,17 +15,20 @@ function App() {
     <div className={styles.app}>
       <div className={styles.flexGrid}>
         <div className={styles.flexRow}>
-          <Letter image={i4} gridSize={5} className={styles.flexCell} />
-          <Letter image={i7} gridSize={5} className={styles.flexCell} />
           <Letter image={i23} gridSize={5} className={styles.flexCell} />
-          <Letter image={i4} gridSize={5} className={styles.flexCell} />
-        </div>
-        <div className={styles.flexRow}>
-          <Letter image={i8} gridSize={5} className={styles.flexCell} />
           <Letter image={i15} gridSize={5} className={styles.flexCell} />
           <Letter image={i4} gridSize={5} className={styles.flexCell} />
           <Letter image={i26} gridSize={5} className={styles.flexCell} />
         </div>
+      </div>
+      <div className={styles.dummy}>
+        <h1>The rest of the website.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nisi!
+          Mollitia porro ab libero. Soluta cupiditate atque qui voluptatem
+          dolorum dolores beatae officiis! Minus, culpa quos quas perspiciatis
+          blanditiis nobis.
+        </p>
       </div>
     </div>
   );
